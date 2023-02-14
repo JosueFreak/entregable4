@@ -1,0 +1,52 @@
+.box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax (300px, 1fr));
+    grid-gap: 10px;
+    grid-auto-rows: minmax(150px, auto);
+    padding-right: 30px;
+    padding-left: 30px;
+    flex-wrap: wrap;
+    float: left; 
+    padding-bottom: 30px;
+    margin: 20px 90px;
+    background-image: radial-gradient(circle at 50% -20.71%, #ffdee5 0, #ffd7e3 10%, #ffcfe1 20%, #ffc6e0 30%, #fbbedf 40%, #f2b5de 50%, #e8adde 60%, #dda6df 70%, #d0a0e0 80%, #c39ce2 90%, #b498e5 100%);
+}
+
+.card_title {
+    color: lavenderblush;
+    text-align: center;
+}
+
+hr {
+    height: 1px;
+    border: 0;
+}
+
+.card_list {
+    line-height: 20pt;
+    flex-wrap: wrap;
+}
+
+.btn {
+    margin-right: 10px;
+    background-image: radial-gradient(circle at 50% -20.71%, #ffe6cd 0, #ffe7ca 6.25%, #ffe9c9 12.5%, #ffebc8 18.75%, #fbecc8 25%, #f6eec8 31.25%, #f1efc9 37.5%, #ebf1cb 43.75%, #e6f2cd 50%, #e1f3d0 56.25%, #dbf4d3 62.5%, #d6f5d7 68.75%, #d1f6db 75%, #ccf7df 81.25%, #c8f8e4 87.5%, #c4f8e9 93.75%, #c1f8ee 100%);
+
+}
+
+.btn:hover {
+    background: #2079b0;
+    background-image: -webkit-linear-gradient(top, #2079b0, #eb94d0);
+    background-image: -moz-linear-gradient(top, #2079b0, #eb94d0);
+    background-image: -ms-linear-gradient(top, #2079b0, #eb94d0);
+    background-image: -o-linear-gradient(top, #2079b0, #eb94d0);
+    background-image: linear-gradient(to bottom, #2079b0, #eb94d0);
+    text-decoration: none;
+}
+
+@media (min-width: 720px) {
+    .box{
+        display: flex;
+        justify-content: center;
+    }
+}
+

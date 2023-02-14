@@ -1,0 +1,79 @@
+.modalForm {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.567);
+    top: 0;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    display: grid;
+    place-content: center;
+    display: none;
+}
+
+.activeForm {
+    display: grid;
+}
+
+.modalForm__form {
+    background-color: white;
+    padding: 20px;
+    position: relative;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 4px;
+}
+
+.modalForm_title {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.modalForm-x {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.modalForm-x:hover {
+    color: rgb(194, 11, 11);
+}
+
+.modalForm_div {
+    line-height: 30px;
+}
+
+.modalForm_label {
+    display: block;
+}
+
+.modalForm_input{
+    width: 100%;
+    padding: 9px;
+    outline: none;
+    font-family: var(--principal-font);
+}
+
+.modalForm_btn {
+    background-image: radial-gradient(circle at 50% -20.71%, #ffdee5 0, #ffd7e3 10%, #ffcfe1 20%, #ffc6e0 30%, #fbbedf 40%, #f2b5de 50%, #e8adde 60%, #dda6df 70%, #d0a0e0 80%, #c39ce2 90%, #b498e5 100%);
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 200ms ease;
+}
+
+.modalForm_btn:hover {
+    background: #2079b0;
+    background-image: -webkit-linear-gradient(top, #2079b0, #eb94d0);
+    background-image: -moz-linear-gradient(top, #2079b0, #eb94d0);
+    background-image: -ms-linear-gradient(top, #2079b0, #eb94d0);
+    background-image: -o-linear-gradient(top, #2079b0, #eb94d0);
+    background-image: linear-gradient(to bottom, #2079b0, #eb94d0);
+    text-decoration: none;
+}
